@@ -24,10 +24,42 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    overflow: hidden;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+body {
+  overscroll-behavior: none;
+  background: rgb(22, 21, 21);
+  font-family: "Inter var", sans-serif;
+  cursor: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxNiIgY3k9IjE2IiByPSIxMCIgZmlsbD0iYmxhY2siLz48L3N2Zz4="),
+    auto;
+}
+
+h1 {
+  font-size: 20vw;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  line-height: 1em;
+  margin: 0;
+  padding: 0;
+  color: red;
+}
+
+canvas {
+  min-height: 100vh;
+}
+*::-webkit-scrollbar {
+  height: 2px;
+  background-color: black;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: red;
+  border-radius: 20px;
+
 }
